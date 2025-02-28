@@ -22,6 +22,8 @@ async function getSearchProducts(query: string): Promise<Product[]> {
   return products
 }
 
+export const dynamic = 'force-dynamic'
+
 export default async function SearchPage({ searchParams }: SearchPageProps) {
   const { q: query } = await searchParams
 
